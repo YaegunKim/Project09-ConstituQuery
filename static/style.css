@@ -1,0 +1,275 @@
+/**
+Header
+*/
+
+header {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  position: relative;
+  background-color: #f6f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Added justify-content property */
+}
+
+header i {
+  font-size: 45px;
+  background-image: linear-gradient(to bottom right, #3821e1, #6438f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#TitleSpan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#EthanGPT {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  background-image: linear-gradient(to bottom right, #3821e1, #6438f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -8px; /* Adjusted margin */
+}
+
+#EducationAdvisor {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  background-image: linear-gradient(to bottom right, #3821e1, #6438f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* nav */
+nav {
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  color: #3821e1;
+  font-family: 'Noto Sans KR', sans-serif; 
+  text-align: center;
+  font-size: 15px; 
+  font-weight: 300;
+}
+
+.nav-container {
+  display: flex;  
+  justify-content: space-around;  
+  width: 60%;  
+}
+
+.Nav_Button {
+  width: 80px; /* Increased width */
+  height: 30px;
+  line-height: 30px; 
+  text-align: center;
+  padding: 0 15px; /* Increased padding */
+  font-size: 14px;
+}
+
+.Nav_Button:hover {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to bottom left, #3821e1, #6438f0);
+  border-radius: 70px / 60px;
+}
+
+
+
+
+/* navigation */
+
+.new-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  height: 100%;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.new-navigation .nav-button {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 15px;
+  font-family: 'Noto Sans KR', sans-serif; 
+  font-size: 14px; font-weight: 300;
+  cursor: pointer;
+  background-color: #f6f7ff; /* Set background color to match previous nav button */
+  color: white;
+  background-image: linear-gradient(to bottom left, #3821e1, #6438f0);
+  border-radius: 10px 100px / 120px;
+}
+
+.new-navigation .nav-button:hover {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.new-navigation .nav-button:not(:last-child) {
+  margin-bottom: 30px; /* Add margin between buttons */
+}
+
+.new-navigation #General {
+  background-image: linear-gradient(to bottom left, #3821e1, #6438f0);
+}
+
+.new-navigation #Math {
+  background-image: linear-gradient(to bottom left, #ffcc00, #f8ae38);
+}
+
+.new-navigation #Sci_Engi {
+  background-image: linear-gradient(to bottom left, #7f17e8, #d438f0);
+}
+
+.new-navigation #Law {
+  background-image: linear-gradient(to bottom left, #ef1313, #ed6a0d);
+}
+
+.new-navigation #Med_Vet {
+  background-image: linear-gradient(to bottom left, #01a319, #04d708);
+}
+
+
+
+
+/* section */
+
+section {
+  background-color: #f6f7ff;
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Center the content vertically */
+  overflow-y: auto; /* Add vertical scroll if necessary */
+}
+
+.container {
+  position: relative; /* Create a new stacking context */
+  width: 100%;
+  flex-grow: 1; /* Allow the container to grow vertically */
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Set flex direction to column */
+}
+
+.search-box {
+  flex-grow: 1; /* Allow the search box to expand vertically */
+  position: relative; /* This will make the form position relative to the .container */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This will center the form vertically and horizontally */
+}
+
+
+#input {
+  width: 600px;
+  height: 50px;
+  border-radius: 10px 100px / 120px;
+  color: rgba(2, 2, 127, 0.59);
+  background-color: white;
+  border: 2px solid transparent; /* Added border property */
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+#input::placeholder {
+  color: rgba(2, 2, 127, 0.192);
+}
+
+#SubmitButton {
+  width: 60px;
+  height: 40px;
+  border-radius: 10px 100px / 120px;
+  border: 0;
+  color: white;
+  background-image: linear-gradient(to bottom right, #3721e146, #6338f03f); /* Added background-image property */
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-size: 8px;
+}
+
+#SubmitButton:hover {
+  background-image: linear-gradient(to bottom right, #3821e1, #6438f0); /* Added background-image property */
+  font-size: 10px;
+  cursor: pointer;
+}
+#containerBox {
+  margin: 30px auto;
+  width: 80%;
+  background-color: white;
+  position: relative;
+  border-radius: 10px 100px / 120px;
+}
+
+#result-container {
+  text-align: center;
+  width: 90%;
+  min-height: 70px;
+  max-height: 30000px;
+  overflow-y: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  color: #2915bc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Add flex-direction property */
+  margin: 0 auto; /* Add margin property to center horizontally */
+}
+
+
+#result-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #3821e1, #6438f0);
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+#result-container p {
+  margin-bottom: 10px; /* Add margin-bottom to create spacing between paragraphs */
+}
+
+
+/* explanation */
+
+.Explanation {
+  background-color: #2915bc;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* footer */
+
+footer {
+}

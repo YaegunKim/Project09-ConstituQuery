@@ -1,0 +1,16 @@
+{
+  "name": "skt-fellowship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "EthanGPT.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splinetool/runtime": "^0.9.339",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
