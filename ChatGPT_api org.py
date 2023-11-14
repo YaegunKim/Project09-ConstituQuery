@@ -4,8 +4,7 @@ import openai
 import time
 import os
 
-openai.api_key = "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"
-
+openai.api_key = "your_key"
 
 app = Flask(__name__, template_folder='templates')
 

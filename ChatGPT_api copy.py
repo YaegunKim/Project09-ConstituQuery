@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='templates')
 
 CORS(app)
 
-openai.api_key = "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"
+openai.api_key = "your_key"
 
 constitution_data = [
   {
